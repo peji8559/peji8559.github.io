@@ -1,395 +1,772 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>Home</title>
 
-    <!-- Mobile Specific Metas
-  ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- CSS
-  ================================================== -->
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="css/animate.css"> 
-    <link rel="stylesheet" href="css/prettyPhoto.css"> 
-    <link rel="stylesheet" href="css/style.css"> 
+<head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-   <body data-spy="scroll" data-target=".main-nav">
-    
-    <section id="section-banner">
-    	<div class="container">
-    		<div class="row">
-    			<div class="banner-content wow fadeInRight">
-    				<h2 class="title"> 
-	    					Hello,<br/>
-							<span>
-				I'm Peng Jiang, 
-							 	</span>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    				</h2>
-                    <div class='subtitle'>
-                    <font style="line-height:1.5;">an undergraduate from University of Colorado Boulder </font><br/>
-                    <font style="line-height:1.5;">Fall 2016 to Spring 2020 </font><br/>
-                    <font style="line-height:1.5;">majoring Computer Science and Mathematics</font><br><br>
-                    <a href="https://www.linkedin.com/in/peng-jiang-224754172/"><i class="fa fa-linkedin"></i></a>
-                    &nbsp;&nbsp;
-                    <a href="https://github.com/peji8559"><i class="fa fa-github"></i></a>
-                    </div>
-                    <br/>
-    				
-    			</div>
-    		</div>
-    	</div>
-    </section>
+  <title>SB Admin - Dashboard</title>
 
-    <!-- section menu start -->
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-    <section class="section-menu">
-    	<div class="navbar navbar-default main-nav" role="navigation" >
-    		<div class="container" >
-    			<div class="navbar-header">
-    				<button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse">
-    					<span class="sr-only"></span>
-    					<span class="icon-bar"></span>
-    					<span class="icon-bar"></span>
-    					<span class="icon-bar"></span>
-    				</button>
-				
-					<a href="#" class="navbar-brand">My information</a>
-    			</div>  <!-- navbar-header end -->
-    			<!-- main nav  -->
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
-    			<div class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
-    				<ul class="nav navbar-nav navbar-right">
-    					<li class="active"><a href="#section-profile">Professional Summary </a></li>
-    					<li><a href="#section-skill">Skills </a></li>
-    					<li><a href="#section-resume">Work Experience && Projects</a></li>
-    					<li><a href="#section-portfolio">Portfolio </a></li>
-    					<li><a href="#section-contact">Contact me </a></li>
-    				</ul>
-    			</div><!-- /.navbar-collapse -->
-    		</div><!-- /.container-fluid -->
-    	</div>
-    </section>
-    <!-- section menu end -->
- 
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
 
-	<!-- section profile start -->
+</head>
 
-	<section id="section-profile" class="section-padding">
-		<div class="profile-bg visible-md visible-lg"></div>
-		<div class="container" style='width:100%;height:100%;'>
-			<div class="row">
-				<div class="col-md-7 col-sm-12 pull-right"style='width:65%;height:100%;padding-left: 200px;'>
-					<div class="profile-desc wow fadeInRight" >
-						 <h2 class="section-title uppercase">Hello, My Name is Peng Jiang</h2>
-<br/>
-                                    <p style='font-size:19px;line-height:1.7;'>
-                                        A junior in University of Colorado Boulder studying computer science and mathematics as an international student. Seeking an opportunity of a computer science and math related internship in 2019 summer. Have already done two internships in China and the managers were very satisfied with my work especially in Qianxingniwo. Was building a mini program on WeChat platform, which can help people to work out and do cardio (still in progress) during the winter break in 2018. Currently working at Physics Department in University of Colorado Boulder as a part-time software Developer.
-                                    </p>
-					  
-					</div>
-					
-					
-				</div>
-			</div> <!-- row end -->
-		</div><!-- container end -->
-	</section>
-	<!-- section profile end -->
+<body id="page-top">
 
-	<!-- section skill start -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-	<section id="section-skill" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="heading-title" style='color:#d1d1d1'>My skills</h2>
-				</div>
-				<div class="col-md-6 col-sm-6 wow fadeInLeft" style='width:100%;'>
-					<div class="skill-desc" style='font-size:19px;color:#b2b2b2;'>
-						<font style="line-height:1.7; ">Being able to use C++, python, JavaScript, PHP as programming languages</font><br/>
-<font style="line-height:1.7;">Experienced with mini program development on WeChat using JavaScript, WXML, WXSS (very similar to HTML and CSS) </font><br/>
+    <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
 
-<font style="line-height:1.7;">Taught myself JavaScript, HTML5, CSS3, WXML, WXSS, MySQL, VBA, Photoshop CS6, Edius</font><br/>
-<font style="line-height:1.7;">Currently using Sublime Text, Jupyter Notebook, PopSQL, WeChat Web DevTools, VMWare, Linux, OS X, Windows 10</font><br/> 
-<font style="line-height:1.7;">Used to use Code Blocks, Geany, Virtual Box</font><br/>
-<font style="line-height:1.7;">Experienced with basic office tool: Microsoft Word, PPT, Excel (primarily used during the summer internship in 2018) </font><br/>
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
 
-<font style="line-height:1.7;">Speaking English(good) and Chinese(native)</font><br/>
+    <!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
 
+    <!-- Navbar -->
+    <ul class="navbar-nav ml-auto ml-md-0">
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bell fa-fw"></i>
+          <span class="badge badge-danger">9+</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-envelope fa-fw"></i>
+          <span class="badge badge-danger">7</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-circle fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="#">Activity Log</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+        </div>
+      </li>
+    </ul>
 
-						 
-					</div>
-				</div>
+  </nav>
 
-			</div>
-		</div>
-	</section>
-	<!-- section skill End -->
+  <div id="wrapper">
 
-	<!-- Resume start -->
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <h6 class="dropdown-header">Login Screens:</h6>
+          <a class="dropdown-item" href="login.html">Login</a>
+          <a class="dropdown-item" href="register.html">Register</a>
+          <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Other Pages:</h6>
+          <a class="dropdown-item" href="404.html">404 Page</a>
+          <a class="dropdown-item" href="blank.html">Blank Page</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Charts</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Tables</span></a>
+      </li>
+    </ul>
 
-	<section id="section-resume" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center wow fadeInUp">
-					<h2 class="heading-title">Work Experience && Projects</h2>
-					<p style='font-size:19px;line-height:1.7;'>As time goes by, I gained more and more knowledges to improve my personal skills and capability. I enjoy facing new challenges, especially when I do it with other people. Being in a team, a company, or even only myself helps me to define my own value. I only wish that I could have contributed more to the world. </p>
- 
-				</div>
-			</div>
-		</div>
-	</section>
+    <div id="content-wrapper">
 
-	<section id="resume-details" class="section-padding">
-	
-	
-<div class="container">
-<div class="row">
-    <div class="col-md-12 wow fadeInLeft">
-                    
-                    <div class="resume-inner">
-                    <h2 class="heading-title" style='color:#ccc;'>Work Experience</h2>
-                        
-                    </div>
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active">Overview</li>
+        </ol>
+
+        <!-- Icon Cards-->
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-primary o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-comments"></i>
                 </div>
-
-    <div class="col-md-12 wow fadeInLeft">
-					
-					
-				</div>
-</div>
-	<div class="row">
-
-        <div class="timeline-centered">
-
-        <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-success">
-                    <i class="entypo-feather"></i>
-                </div>
-
-                <div class="timeline-label">
-                    <h3 class="resume-title">Web Developer & Server Administrator - Part-Time </h3> 
-                    <p style='font-size:20px; color:#ccc;'>University of Colorado Boulder – Physics Department</p>
-                    <p style='font-size:20px; color:#ccc;'>Feb 2019 - Present</p>
-                    <p style='font-size:20px; color:#ccc;'>Boulder, CO, US </p>
-                    <p style='font-size:18px; color:#ccc;'>Working for one of the Physics Department websites physicslearning.colorado.edu. The website is mainly used by instructors in Physics Department to request demos on their lectures. My job is to maintain the server including database updating, data uploading, system backup, adding new features to the website and debugging if there are some issues coming up. I always communicate to the manager to make sure every detail is covered and get feedback from the manager and instructors to make some improvements on the website.</p>
-                    <a href="http://physicslearning.colorado.edu/" class="btn btn-default featured">physicslearning.colorado.edu</a>
-                </div>
+                <div class="mr-5">26 New Messages!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">View Details</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
             </div>
-
-        </article>
-
-
-        <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-secondary">
-                    <i class="entypo-suitcase"></i>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-warning o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-list"></i>
                 </div>
-
-                <div class="timeline-label">
-                   <h3 class="resume-title">Data Analyst - Internship</h3> 
-                    <p style='font-size:20px; color:#ccc;'>Qianxingniwo Technology Co., Ltd</p>
-                    <p style='font-size:20px; color:#ccc;'>May 2018 - Jul 2018</p>
-                    <p style='font-size:20px; color:#ccc;'>Chengdu, Sichuan, China</p>
-                    <p style='font-size:18px; color:#ccc;'>I was assigned to innovative operation department. My main mission is to collect accurate data of products that our company currently doesn't have. Then, analyzing how those products performs on the market to help the company to decide whether they should import the specific product or not. The manager commented my statistics was very useful and they had a person took over my job after I left.</p>
-                    <a href="http://www.qianxingniwo.com/" class="btn btn-default featured">Qianxingniwo Technology Co., Ltd</a>
-
-                </div>
+                <div class="mr-5">11 New Tasks!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">View Details</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
             </div>
-
-        </article>
-
-
-        <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-info">
-                    <i class="entypo-location"></i>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-success o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-shopping-cart"></i>
                 </div>
-
-                <div class="timeline-label">
-                    <h3 class="resume-title">Student Internship</h3> 
-                    <p style='font-size:20px; color:#ccc;'>CITIC Bank Yinhe Dynasty Subbranch</p>
-                    <p style='font-size:20px; color:#ccc;'>Jun 2016 - Jul 2016</p>
-                    <p style='font-size:20px; color:#ccc;'>Chengdu, Sichuan, China</p>
-                    <p style='font-size:18px; color:#ccc;'>My job is to sell financial products, issue passports from US Consulate, upload customers visa information/loan information arrangement and real estate mortgage procedures. The managers showed me how the bank is operated and other services they provide.</p>
-                    <a href="http://www.citicbank.com/" class="btn btn-default featured">China Citic bank</a>
-                </div>
+                <div class="mr-5">123 New Orders!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">View Details</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
             </div>
-
-        </article>
-
-
-       
-
-
-        <article class="timeline-entry begin">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
-                    <i class="entypo-flight"></i> +
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-danger o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-life-ring"></i>
                 </div>
-
+                <div class="mr-5">13 New Tickets!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">View Details</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
             </div>
+          </div>
+        </div>
 
-        </article>
+        <!-- Area Chart Example-->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-chart-area"></i>
+            Area Chart Example</div>
+          <div class="card-body">
+            <canvas id="myAreaChart" width="100%" height="30"></canvas>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Data Table Example</div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>$320,800</td>
+                  </tr>
+                  <tr>
+                    <td>Garrett Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>63</td>
+                    <td>2011/07/25</td>
+                    <td>$170,750</td>
+                  </tr>
+                  <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>66</td>
+                    <td>2009/01/12</td>
+                    <td>$86,000</td>
+                  </tr>
+                  <tr>
+                    <td>Cedric Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>2012/03/29</td>
+                    <td>$433,060</td>
+                  </tr>
+                  <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>33</td>
+                    <td>2008/11/28</td>
+                    <td>$162,700</td>
+                  </tr>
+                  <tr>
+                    <td>Brielle Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>61</td>
+                    <td>2012/12/02</td>
+                    <td>$372,000</td>
+                  </tr>
+                  <tr>
+                    <td>Herrod Chandler</td>
+                    <td>Sales Assistant</td>
+                    <td>San Francisco</td>
+                    <td>59</td>
+                    <td>2012/08/06</td>
+                    <td>$137,500</td>
+                  </tr>
+                  <tr>
+                    <td>Rhona Davidson</td>
+                    <td>Integration Specialist</td>
+                    <td>Tokyo</td>
+                    <td>55</td>
+                    <td>2010/10/14</td>
+                    <td>$327,900</td>
+                  </tr>
+                  <tr>
+                    <td>Colleen Hurst</td>
+                    <td>Javascript Developer</td>
+                    <td>San Francisco</td>
+                    <td>39</td>
+                    <td>2009/09/15</td>
+                    <td>$205,500</td>
+                  </tr>
+                  <tr>
+                    <td>Sonya Frost</td>
+                    <td>Software Engineer</td>
+                    <td>Edinburgh</td>
+                    <td>23</td>
+                    <td>2008/12/13</td>
+                    <td>$103,600</td>
+                  </tr>
+                  <tr>
+                    <td>Jena Gaines</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>30</td>
+                    <td>2008/12/19</td>
+                    <td>$90,560</td>
+                  </tr>
+                  <tr>
+                    <td>Quinn Flynn</td>
+                    <td>Support Lead</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>2013/03/03</td>
+                    <td>$342,000</td>
+                  </tr>
+                  <tr>
+                    <td>Charde Marshall</td>
+                    <td>Regional Director</td>
+                    <td>San Francisco</td>
+                    <td>36</td>
+                    <td>2008/10/16</td>
+                    <td>$470,600</td>
+                  </tr>
+                  <tr>
+                    <td>Haley Kennedy</td>
+                    <td>Senior Marketing Designer</td>
+                    <td>London</td>
+                    <td>43</td>
+                    <td>2012/12/18</td>
+                    <td>$313,500</td>
+                  </tr>
+                  <tr>
+                    <td>Tatyana Fitzpatrick</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>19</td>
+                    <td>2010/03/17</td>
+                    <td>$385,750</td>
+                  </tr>
+                  <tr>
+                    <td>Michael Silva</td>
+                    <td>Marketing Designer</td>
+                    <td>London</td>
+                    <td>66</td>
+                    <td>2012/11/27</td>
+                    <td>$198,500</td>
+                  </tr>
+                  <tr>
+                    <td>Paul Byrd</td>
+                    <td>Chief Financial Officer (CFO)</td>
+                    <td>New York</td>
+                    <td>64</td>
+                    <td>2010/06/09</td>
+                    <td>$725,000</td>
+                  </tr>
+                  <tr>
+                    <td>Gloria Little</td>
+                    <td>Systems Administrator</td>
+                    <td>New York</td>
+                    <td>59</td>
+                    <td>2009/04/10</td>
+                    <td>$237,500</td>
+                  </tr>
+                  <tr>
+                    <td>Bradley Greer</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>41</td>
+                    <td>2012/10/13</td>
+                    <td>$132,000</td>
+                  </tr>
+                  <tr>
+                    <td>Dai Rios</td>
+                    <td>Personnel Lead</td>
+                    <td>Edinburgh</td>
+                    <td>35</td>
+                    <td>2012/09/26</td>
+                    <td>$217,500</td>
+                  </tr>
+                  <tr>
+                    <td>Jenette Caldwell</td>
+                    <td>Development Lead</td>
+                    <td>New York</td>
+                    <td>30</td>
+                    <td>2011/09/03</td>
+                    <td>$345,000</td>
+                  </tr>
+                  <tr>
+                    <td>Yuri Berry</td>
+                    <td>Chief Marketing Officer (CMO)</td>
+                    <td>New York</td>
+                    <td>40</td>
+                    <td>2009/06/25</td>
+                    <td>$675,000</td>
+                  </tr>
+                  <tr>
+                    <td>Caesar Vance</td>
+                    <td>Pre-Sales Support</td>
+                    <td>New York</td>
+                    <td>21</td>
+                    <td>2011/12/12</td>
+                    <td>$106,450</td>
+                  </tr>
+                  <tr>
+                    <td>Doris Wilder</td>
+                    <td>Sales Assistant</td>
+                    <td>Sidney</td>
+                    <td>23</td>
+                    <td>2010/09/20</td>
+                    <td>$85,600</td>
+                  </tr>
+                  <tr>
+                    <td>Angelica Ramos</td>
+                    <td>Chief Executive Officer (CEO)</td>
+                    <td>London</td>
+                    <td>47</td>
+                    <td>2009/10/09</td>
+                    <td>$1,200,000</td>
+                  </tr>
+                  <tr>
+                    <td>Gavin Joyce</td>
+                    <td>Developer</td>
+                    <td>Edinburgh</td>
+                    <td>42</td>
+                    <td>2010/12/22</td>
+                    <td>$92,575</td>
+                  </tr>
+                  <tr>
+                    <td>Jennifer Chang</td>
+                    <td>Regional Director</td>
+                    <td>Singapore</td>
+                    <td>28</td>
+                    <td>2010/11/14</td>
+                    <td>$357,650</td>
+                  </tr>
+                  <tr>
+                    <td>Brenden Wagner</td>
+                    <td>Software Engineer</td>
+                    <td>San Francisco</td>
+                    <td>28</td>
+                    <td>2011/06/07</td>
+                    <td>$206,850</td>
+                  </tr>
+                  <tr>
+                    <td>Fiona Green</td>
+                    <td>Chief Operating Officer (COO)</td>
+                    <td>San Francisco</td>
+                    <td>48</td>
+                    <td>2010/03/11</td>
+                    <td>$850,000</td>
+                  </tr>
+                  <tr>
+                    <td>Shou Itou</td>
+                    <td>Regional Marketing</td>
+                    <td>Tokyo</td>
+                    <td>20</td>
+                    <td>2011/08/14</td>
+                    <td>$163,000</td>
+                  </tr>
+                  <tr>
+                    <td>Michelle House</td>
+                    <td>Integration Specialist</td>
+                    <td>Sidney</td>
+                    <td>37</td>
+                    <td>2011/06/02</td>
+                    <td>$95,400</td>
+                  </tr>
+                  <tr>
+                    <td>Suki Burks</td>
+                    <td>Developer</td>
+                    <td>London</td>
+                    <td>53</td>
+                    <td>2009/10/22</td>
+                    <td>$114,500</td>
+                  </tr>
+                  <tr>
+                    <td>Prescott Bartlett</td>
+                    <td>Technical Author</td>
+                    <td>London</td>
+                    <td>27</td>
+                    <td>2011/05/07</td>
+                    <td>$145,000</td>
+                  </tr>
+                  <tr>
+                    <td>Gavin Cortez</td>
+                    <td>Team Leader</td>
+                    <td>San Francisco</td>
+                    <td>22</td>
+                    <td>2008/10/26</td>
+                    <td>$235,500</td>
+                  </tr>
+                  <tr>
+                    <td>Martena Mccray</td>
+                    <td>Post-Sales support</td>
+                    <td>Edinburgh</td>
+                    <td>46</td>
+                    <td>2011/03/09</td>
+                    <td>$324,050</td>
+                  </tr>
+                  <tr>
+                    <td>Unity Butler</td>
+                    <td>Marketing Designer</td>
+                    <td>San Francisco</td>
+                    <td>47</td>
+                    <td>2009/12/09</td>
+                    <td>$85,675</td>
+                  </tr>
+                  <tr>
+                    <td>Howard Hatfield</td>
+                    <td>Office Manager</td>
+                    <td>San Francisco</td>
+                    <td>51</td>
+                    <td>2008/12/16</td>
+                    <td>$164,500</td>
+                  </tr>
+                  <tr>
+                    <td>Hope Fuentes</td>
+                    <td>Secretary</td>
+                    <td>San Francisco</td>
+                    <td>41</td>
+                    <td>2010/02/12</td>
+                    <td>$109,850</td>
+                  </tr>
+                  <tr>
+                    <td>Vivian Harrell</td>
+                    <td>Financial Controller</td>
+                    <td>San Francisco</td>
+                    <td>62</td>
+                    <td>2009/02/14</td>
+                    <td>$452,500</td>
+                  </tr>
+                  <tr>
+                    <td>Timothy Mooney</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>37</td>
+                    <td>2008/12/11</td>
+                    <td>$136,200</td>
+                  </tr>
+                  <tr>
+                    <td>Jackson Bradshaw</td>
+                    <td>Director</td>
+                    <td>New York</td>
+                    <td>65</td>
+                    <td>2008/09/26</td>
+                    <td>$645,750</td>
+                  </tr>
+                  <tr>
+                    <td>Olivia Liang</td>
+                    <td>Support Engineer</td>
+                    <td>Singapore</td>
+                    <td>64</td>
+                    <td>2011/02/03</td>
+                    <td>$234,500</td>
+                  </tr>
+                  <tr>
+                    <td>Bruno Nash</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>38</td>
+                    <td>2011/05/03</td>
+                    <td>$163,500</td>
+                  </tr>
+                  <tr>
+                    <td>Sakura Yamamoto</td>
+                    <td>Support Engineer</td>
+                    <td>Tokyo</td>
+                    <td>37</td>
+                    <td>2009/08/19</td>
+                    <td>$139,575</td>
+                  </tr>
+                  <tr>
+                    <td>Thor Walton</td>
+                    <td>Developer</td>
+                    <td>New York</td>
+                    <td>61</td>
+                    <td>2013/08/11</td>
+                    <td>$98,540</td>
+                  </tr>
+                  <tr>
+                    <td>Finn Camacho</td>
+                    <td>Support Engineer</td>
+                    <td>San Francisco</td>
+                    <td>47</td>
+                    <td>2009/07/07</td>
+                    <td>$87,500</td>
+                  </tr>
+                  <tr>
+                    <td>Serge Baldwin</td>
+                    <td>Data Coordinator</td>
+                    <td>Singapore</td>
+                    <td>64</td>
+                    <td>2012/04/09</td>
+                    <td>$138,575</td>
+                  </tr>
+                  <tr>
+                    <td>Zenaida Frank</td>
+                    <td>Software Engineer</td>
+                    <td>New York</td>
+                    <td>63</td>
+                    <td>2010/01/04</td>
+                    <td>$125,250</td>
+                  </tr>
+                  <tr>
+                    <td>Zorita Serrano</td>
+                    <td>Software Engineer</td>
+                    <td>San Francisco</td>
+                    <td>56</td>
+                    <td>2012/06/01</td>
+                    <td>$115,000</td>
+                  </tr>
+                  <tr>
+                    <td>Jennifer Acosta</td>
+                    <td>Junior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>43</td>
+                    <td>2013/02/01</td>
+                    <td>$75,650</td>
+                  </tr>
+                  <tr>
+                    <td>Cara Stevens</td>
+                    <td>Sales Assistant</td>
+                    <td>New York</td>
+                    <td>46</td>
+                    <td>2011/12/06</td>
+                    <td>$145,600</td>
+                  </tr>
+                  <tr>
+                    <td>Hermione Butler</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>47</td>
+                    <td>2011/03/21</td>
+                    <td>$356,250</td>
+                  </tr>
+                  <tr>
+                    <td>Lael Greer</td>
+                    <td>Systems Administrator</td>
+                    <td>London</td>
+                    <td>21</td>
+                    <td>2009/02/27</td>
+                    <td>$103,500</td>
+                  </tr>
+                  <tr>
+                    <td>Jonas Alexander</td>
+                    <td>Developer</td>
+                    <td>San Francisco</td>
+                    <td>30</td>
+                    <td>2010/07/14</td>
+                    <td>$86,500</td>
+                  </tr>
+                  <tr>
+                    <td>Shad Decker</td>
+                    <td>Regional Director</td>
+                    <td>Edinburgh</td>
+                    <td>51</td>
+                    <td>2008/11/13</td>
+                    <td>$183,000</td>
+                  </tr>
+                  <tr>
+                    <td>Michael Bruce</td>
+                    <td>Javascript Developer</td>
+                    <td>Singapore</td>
+                    <td>29</td>
+                    <td>2011/06/27</td>
+                    <td>$183,000</td>
+                  </tr>
+                  <tr>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>27</td>
+                    <td>2011/01/25</td>
+                    <td>$112,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+
+      </div>
+      <!-- /.container-fluid -->
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
 
     </div>
+    <!-- /.content-wrapper -->
 
-    
-	</div>
-</div>
-	
-<div class="container">
-<div class="row">
-    <div class="col-md-12 wow fadeInLeft">
-					
-					<div class="resume-inner">
-					<h2 class="heading-title" style='color:#ccc;'>Projects</h2>
-					</div>
-				</div>
-</div>
-	<div class="row">
+  </div>
+  <!-- /#wrapper -->
 
-        <div class="timeline-centered">
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
 
-        <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-success">
-                    <i class="entypo-feather"></i>
-                </div>
-
-                <div class="timeline-label">
-                    <h3 class="resume-title">Wifiology</h3> 
-                    <p style='font-size:20px; color:#ccc;'>Software Dev Methods and Tools @ University of Colorado Boulder</p>
-                    <p style='font-size:20px; color:#ccc;'>Peng Jiang, Robert Cope, Jason Nguyen, Baiyu Chen, Jasper Niemeyer, Ryan Campbell</p>
-                    <p style='font-size:20px; color:#ccc;'>Semester Spring 2019</p>
-                    <p style='font-size:20px; color:#ccc;'>Bouder, CO, US</p>
-                    <p style='font-size:18px; color:#ccc;'>We wanted to know if certain study areas in the library were crowded before trying to meet there. We use WiFi traffic to estimate the number of people in the vicinity of our listening device.  </p>
-                    <p style='font-size:20px; color:#ccc;'>With some additional work our app now has the potential to serve a broader commercial market giving network admins:</p>
-                    <p style='font-size: 15px; color: #ccc; padding-left: 20px; margin-top:-15px;'>Monitor network traffic in real time</p>
-                    <p style='font-size: 15px; color: #ccc; padding-left: 20px; margin-top:-15px;'>Compare to historical data of that network</p>
-                    <p style='font-size: 15px; color: #ccc; padding-left: 20px; margin-top:-15px;'>Diagnose the health of network equipment</p>
-                    <p style='font-size: 15px; color: #ccc; padding-left: 20px; margin-top:-15px;'>Identify suspicious mac addresses on the network</p>
-                    <a href="https://wifiology.copesystems.com/" class="btn btn-default featured">Wifiology Website</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://github.com/404-group-does-not-exist" class="btn btn-default featured">Github Repository of Wifiology</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://trello.com/b/VvROa8e0/wifiology" class="btn btn-default featured">Trello of Wifiology</a>
-
-                </div>
-            </div>
-
-        </article>
-
-
-
-        <article class="timeline-entry begin">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
-                    <i class="entypo-flight"></i> +
-                </div>
-
-            </div>
-
-        </article>
-
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <a href="Peng_Jiang_Resume.pdf" class="btn btn-default featured">Download Resume</a>
-	</div>
-</div>
-	 
-	</section>
-	<!-- Resume end -->
-	
-    
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-	<!-- section contact start -->
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-	<section id="section-contact" class="section-padding">
-		<div class="container" >
-			<div class="row" >
-				<div class="col-md-12" >
-					<h2 class="heading-title">Contact me</h2>
-				</div>
-			</div>
-			<div class="row" >
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
-				
-					<div class="col-md-6 col-sm-6 wow fadeInLeft">
-					<div class="contact-left">
-						
-						<div class="location">
-							<p>2830 E College Ave, apt.304</p>
-							<p>Boulder, CO, US</p>
-						</div>
-						<ul>
-							<li><span>Email_1 :</span> <a>peji8559@colorado.edu</a></li>
-                            <li><span>Email_2 :</span> <a>pengjiang0528@gmail.com</a></li>
-                            <li><span>Email_3 :</span> <a>pengjiang0528@163.com</a></li>
-							<li><span>Phone_US :</span> <a>1-303-332-5581</a></li>
-                            <li><span>Phone_CN :</span> <a>(+86)13540444739</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- section contact end -->
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
 
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.useso.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- initialize jQuery Library -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <!-- Bootstrap jQuery -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <!-- PrettyPhoto -->
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <!-- Wow Animation -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <!-- singlepagenav -->
-    <script src="js/jquery.singlePageNav.js"></script>
-    <!-- Eeasing -->
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <!-- Sticky Menu -->
-    <script src="js/jquery.sticky.js"></script>
- <script src="contact/jqBootstrapValidation.js"></script>
- <script src="contact/contact_me.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script> 
-	<script>
-		 $(".main-nav").sticky();
-	</script>
+</body>
 
-	<script> 
-        new WOW().init();
-    
-    </script>
-  </body>
 </html>
